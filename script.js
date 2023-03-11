@@ -2,6 +2,8 @@ const messageEl = document.querySelector(".message-text");
 const changeBtn = document.querySelector(".change-message");
 const mainEl = document.querySelector("main");
 const explainBtn = document.querySelector(".explanation");
+const howItWorksEl = document.querySelector(".how-it-words");
+const closeBtn = document.querySelector(".close-info");
 
 // Design
 
@@ -74,6 +76,18 @@ changeBtn.addEventListener("click", function () {
   }
 });
 
+// how it works
+explainBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  mainEl.style.filter = "blur(1rem)";
+  howItWorksEl.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  mainEl.style.filter = "blur(0)";
+  howItWorksEl.style.display = "none";
+});
 // generate a random number between min and max included
 function randomNumber(min = 0, max = 256) {
   return Math.floor(Math.random() * (max + 1 - min)) + min;
