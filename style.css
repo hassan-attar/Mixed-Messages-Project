@@ -54,12 +54,11 @@ h1 {
 /* BODY background setting */
 /* background: linear-gradient(0 to 360 deg, rgba(91,255,0,1) 0%, rgba(255,190,51,1) 100%); */
 main {
-  background-image: linear-gradient(
-    90deg,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(99, 166, 246, 1) 100%
-  );
   display: grid;
+  -webkit-transition: all 3000ms linear;
+  -ms-transition: all 3000ms linear;
+  -o-transition: all 3000ms linear;
+  transition: all 3000ms linear;
 }
 
 /* Message */
@@ -75,6 +74,7 @@ main {
   gap: 3.2rem;
 }
 .message-box {
+  background-color: hwb(81 0% 25%);
   background-color: #f1f3f5;
   color: #343a40;
   padding: 1.8rem 3.6rem;
@@ -110,4 +110,27 @@ footer {
 
 small {
   font-size: 1rem;
+}
+
+/* HOW IT WORKS: not completed */
+.how-it-words {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: none;
+}
+.info {
+  background-color: #f1f3f5;
+  height: 20rem;
+  width: 50rem;
+  padding: 2.4rem 3.2rem;
+  border-radius: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info p {
+  font-size: 2.4rem;
+  font-weight: 500;
 }
