@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Heading */
+header {
+  background-color: #212529;
+  color: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.explanation {
+  background-color: #f1f3f5;
+  padding: 1.2rem 2.4rem;
+  border-radius: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-color: #212529;
+  color: #343a40;
+  transition: all 1s;
+}
+
+.explanation:hover {
+  background-color: #363c42;
+  color: #f1f3f5;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+.author {
+  font-size: 1.4rem;
+}
+.readme {
+  font-size: 1rem;
+}
+
+/* BODY background setting */
+/* background: linear-gradient(0 to 360 deg, rgba(91,255,0,1) 0%, rgba(255,190,51,1) 100%); */
+main {
+  background-image: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(99, 166, 246, 1) 100%
+  );
+  display: grid;
+}
+
+/* Message */
+.fortune-teller {
+  margin-top: 20rem;
+  align-self: center;
+  justify-self: center;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.message-box {
+  background-color: #f1f3f5;
+  color: #343a40;
+  padding: 1.8rem 3.6rem;
+  border-radius: 5.2rem;
+  text-align: center;
+  min-width: 80%;
+}
+.message-text {
+  font-size: 3.4rem;
+  font-family: "Courgette", cursive;
+}
+
+.change-message {
+  background-color: #444c53;
+  color: #f1f3f5;
+  border-color: #575e64;
+  font-size: 1.8rem;
+  padding: 1.8rem 3.6rem;
+  border-radius: 5.2rem;
+  transition: all 1s;
+  box-shadow: 0rem 1.2rem 3rem rgba(0, 0, 0, 0.4);
+}
+.change-message:hover {
+  box-shadow: 0rem 1.2rem 3rem rgba(0, 0, 0, 0.2);
+}
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #f1f3f5;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+small {
+  font-size: 1rem;
+}
